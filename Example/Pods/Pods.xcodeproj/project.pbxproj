@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00773553FB9EAA2DB4F2053A90CBCFD2 /* OverlapStack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FFA9EE716B36FB61586815A29154BD /* OverlapStack-dummy.m */; };
+		2DA5ADA822FEF109B726A9F6D859973B /* Pods-OverlapStack_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C35E7A012D9AFF3D8127CF685C1A50F /* Pods-OverlapStack_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A2C4D5E2D190AE200AFC722 /* OverlapStackAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C4D5D2D190AE100AFC722 /* OverlapStackAlignment.swift */; };
+		3A2C4D602D190B3F00AFC722 /* OverlapDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C4D5F2D190B3300AFC722 /* OverlapDirection.swift */; };
+		3A5951002D1935CA00FBD0D6 /* OverlapItemCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5950FF2D1935C500FBD0D6 /* OverlapItemCache.swift */; };
+		3A5951032D1935F900FBD0D6 /* LayoutSubview+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5951022D1935F400FBD0D6 /* LayoutSubview+Extensions.swift */; };
+		3A5951052D19378B00FBD0D6 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5951042D19378400FBD0D6 /* CGFloat+Extensions.swift */; };
+		3A5951072D1A48C500FBD0D6 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5951062D1A48BE00FBD0D6 /* CGRect+Extensions.swift */; };
+		3A8C5A2A2D17EF0600248729 /* OverlapStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A292D17EE4300248729 /* OverlapStackLayout.swift */; };
+		3A8C5A2E2D17F4BE00248729 /* CustomOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A2D2D17F4BA00248729 /* CustomOffset.swift */; };
+		3A8C5A342D180F1E00248729 /* OverlapVStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A332D180F1D00248729 /* OverlapVStackLayout.swift */; };
+		3A8C5A372D180F5200248729 /* OverlapHStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A362D180F5100248729 /* OverlapHStackLayout.swift */; };
+		3A8C5A3A2D18101000248729 /* OverlapVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A392D18100900248729 /* OverlapVStack.swift */; };
+		3A8C5A3C2D1842FA00248729 /* OverlapHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A3B2D1842F600248729 /* OverlapHStack.swift */; };
+		5281FF3B41149BDE2E10DF41399876EE /* Pods-OverlapStack_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C21D0666CE3BBFD369699DFB3DE9C4FE /* Pods-OverlapStack_Example-dummy.m */; };
+		6D86FA8549416B7D27715FB913EDFA5F /* OverlapStack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC85569C490C6125E82D2DBCD398367 /* OverlapStack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		757DB4AEC188C6D4A79AB8F37F3370BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		789D53518C1A1E166543FA1781C0C31D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		8C1C58019EF48F2F412246ADF6297A1A /* Pods-OverlapStack_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E353043B224CB4421ED32F23B9AC431 /* Pods-OverlapStack_Tests-dummy.m */; };
+		A9517C0886203E0A30BC3604611CA032 /* Pods-OverlapStack_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90CD7DAE33ED8EA0072A1D0E4A7067F2 /* Pods-OverlapStack_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5446424568E8A46FB20944EF4DA4DB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FD5A541C56764324DCFDA6ED3515F46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 151F41BDAE0D460CD5FDFE97FDCBA866;
+			remoteInfo = OverlapStack;
+		};
+		80743BE040B35DA4E8DE0362143A5ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4768ADE2C47C7221B7DB3C2B46FBA7F8;
+			remoteInfo = "Pods-OverlapStack_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05FFA9EE716B36FB61586815A29154BD /* OverlapStack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OverlapStack-dummy.m"; sourceTree = "<group>"; };
+		10BDED8F16D933A0764469A4D06BA65C /* OverlapStack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OverlapStack-Info.plist"; sourceTree = "<group>"; };
+		186ED1AE352912186D9036C0C9DBAC15 /* Pods-OverlapStack_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OverlapStack_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1D6EE06A49F53AF74ED7725ECC1DCB7B /* Pods-OverlapStack_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OverlapStack_Example.modulemap"; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A2C4D5D2D190AE100AFC722 /* OverlapStackAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapStackAlignment.swift; sourceTree = "<group>"; };
+		3A2C4D5F2D190B3300AFC722 /* OverlapDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapDirection.swift; sourceTree = "<group>"; };
+		3A5950FF2D1935C500FBD0D6 /* OverlapItemCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapItemCache.swift; sourceTree = "<group>"; };
+		3A5951022D1935F400FBD0D6 /* LayoutSubview+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutSubview+Extensions.swift"; sourceTree = "<group>"; };
+		3A5951042D19378400FBD0D6 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		3A5951062D1A48BE00FBD0D6 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
+		3A8C5A292D17EE4300248729 /* OverlapStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapStackLayout.swift; sourceTree = "<group>"; };
+		3A8C5A2D2D17F4BA00248729 /* CustomOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOffset.swift; sourceTree = "<group>"; };
+		3A8C5A332D180F1D00248729 /* OverlapVStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapVStackLayout.swift; sourceTree = "<group>"; };
+		3A8C5A362D180F5100248729 /* OverlapHStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapHStackLayout.swift; sourceTree = "<group>"; };
+		3A8C5A392D18100900248729 /* OverlapVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapVStack.swift; sourceTree = "<group>"; };
+		3A8C5A3B2D1842F600248729 /* OverlapHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapHStack.swift; sourceTree = "<group>"; };
+		3AC28138DC1534643D9CC4E559949C32 /* OverlapStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OverlapStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C35E7A012D9AFF3D8127CF685C1A50F /* Pods-OverlapStack_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OverlapStack_Tests-umbrella.h"; sourceTree = "<group>"; };
+		42EA4149F9A35FD746F60DA7F9A27A67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4569794B87109962AB6868D32E684B5D /* Pods-OverlapStack_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OverlapStack_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		525535A7EBA7E47C87D3964D90D9AB80 /* OverlapStack.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = OverlapStack.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		58342C1F27697C2C4399956FBBF1C2F5 /* Pods-OverlapStack_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OverlapStack_Tests-Info.plist"; sourceTree = "<group>"; };
+		5C452863038E01BD643A8B3E6ADC8B4B /* Pods_OverlapStack_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverlapStack_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6049ACC1D36F673C67D835A1BD1A1F62 /* OverlapStack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OverlapStack.release.xcconfig; sourceTree = "<group>"; };
+		6D98DBF3713988A6891BA31D5163FE02 /* Pods-OverlapStack_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OverlapStack_Example-Info.plist"; sourceTree = "<group>"; };
+		7E353043B224CB4421ED32F23B9AC431 /* Pods-OverlapStack_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OverlapStack_Tests-dummy.m"; sourceTree = "<group>"; };
+		83FD6718C49D77D1C6561F104A665E69 /* OverlapStack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OverlapStack.debug.xcconfig; sourceTree = "<group>"; };
+		854D6139E75F2098174098638AAFB3D7 /* Pods-OverlapStack_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverlapStack_Example.release.xcconfig"; sourceTree = "<group>"; };
+		90CD7DAE33ED8EA0072A1D0E4A7067F2 /* Pods-OverlapStack_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OverlapStack_Example-umbrella.h"; sourceTree = "<group>"; };
+		92CEC481EA0DD63CE10B32875F8F77D5 /* Pods-OverlapStack_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverlapStack_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9968C4CDDA63E55B59D3C6C16668DDA9 /* OverlapStack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OverlapStack.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7D3381CDEDC0E78347FA92AC476785D /* Pods-OverlapStack_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OverlapStack_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B1C8D9C37094599C97006471E985A59B /* Pods_OverlapStack_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverlapStack_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8538ACDC8680A470CC6B6903762A72D /* Pods-OverlapStack_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverlapStack_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BA09D17E37E94836DFC59743C9DFD1CC /* Pods-OverlapStack_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OverlapStack_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BE02C6A455016083918523B23672A571 /* OverlapStack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OverlapStack-prefix.pch"; sourceTree = "<group>"; };
+		C21D0666CE3BBFD369699DFB3DE9C4FE /* Pods-OverlapStack_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OverlapStack_Example-dummy.m"; sourceTree = "<group>"; };
+		D695F1846465C19AD9CC4B431A891187 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DD1AEC7F6AF812D3E8FFC9ABCD3AECBC /* Pods-OverlapStack_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OverlapStack_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E06DECB35ACDECF5C1262AB357B93D7D /* Pods-OverlapStack_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OverlapStack_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F5CE1C93F9C215FC51D090B3C32D5B30 /* Pods-OverlapStack_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OverlapStack_Tests.modulemap"; sourceTree = "<group>"; };
+		FBC85569C490C6125E82D2DBCD398367 /* OverlapStack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OverlapStack-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0089D4F784B3CA056D3C4F25D763A12D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789D53518C1A1E166543FA1781C0C31D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		233574A85066E51D4C2206A9622263A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5446424568E8A46FB20944EF4DA4DB6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD69E1A009A4AD6A1D5B73D4DBC73B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757DB4AEC188C6D4A79AB8F37F3370BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D32CFD58BB56804C599D83F193C2E9C /* Pods-OverlapStack_Example */ = {
+			isa = PBXGroup;
+			children = (
+				1D6EE06A49F53AF74ED7725ECC1DCB7B /* Pods-OverlapStack_Example.modulemap */,
+				186ED1AE352912186D9036C0C9DBAC15 /* Pods-OverlapStack_Example-acknowledgements.markdown */,
+				4569794B87109962AB6868D32E684B5D /* Pods-OverlapStack_Example-acknowledgements.plist */,
+				C21D0666CE3BBFD369699DFB3DE9C4FE /* Pods-OverlapStack_Example-dummy.m */,
+				BA09D17E37E94836DFC59743C9DFD1CC /* Pods-OverlapStack_Example-frameworks.sh */,
+				6D98DBF3713988A6891BA31D5163FE02 /* Pods-OverlapStack_Example-Info.plist */,
+				90CD7DAE33ED8EA0072A1D0E4A7067F2 /* Pods-OverlapStack_Example-umbrella.h */,
+				B8538ACDC8680A470CC6B6903762A72D /* Pods-OverlapStack_Example.debug.xcconfig */,
+				854D6139E75F2098174098638AAFB3D7 /* Pods-OverlapStack_Example.release.xcconfig */,
+			);
+			name = "Pods-OverlapStack_Example";
+			path = "Target Support Files/Pods-OverlapStack_Example";
+			sourceTree = "<group>";
+		};
+		11027CEDC4E38F3D6C64622E8FB08354 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AC28138DC1534643D9CC4E559949C32 /* OverlapStack.framework */,
+				B1C8D9C37094599C97006471E985A59B /* Pods_OverlapStack_Example.framework */,
+				5C452863038E01BD643A8B3E6ADC8B4B /* Pods_OverlapStack_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27B5EF2293346019C824A38757A70528 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				42EA4149F9A35FD746F60DA7F9A27A67 /* LICENSE */,
+				525535A7EBA7E47C87D3964D90D9AB80 /* OverlapStack.podspec */,
+				D695F1846465C19AD9CC4B431A891187 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2BAC90EC266B870161AF0A42457D669F /* Pods-OverlapStack_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F5CE1C93F9C215FC51D090B3C32D5B30 /* Pods-OverlapStack_Tests.modulemap */,
+				DD1AEC7F6AF812D3E8FFC9ABCD3AECBC /* Pods-OverlapStack_Tests-acknowledgements.markdown */,
+				A7D3381CDEDC0E78347FA92AC476785D /* Pods-OverlapStack_Tests-acknowledgements.plist */,
+				7E353043B224CB4421ED32F23B9AC431 /* Pods-OverlapStack_Tests-dummy.m */,
+				58342C1F27697C2C4399956FBBF1C2F5 /* Pods-OverlapStack_Tests-Info.plist */,
+				3C35E7A012D9AFF3D8127CF685C1A50F /* Pods-OverlapStack_Tests-umbrella.h */,
+				92CEC481EA0DD63CE10B32875F8F77D5 /* Pods-OverlapStack_Tests.debug.xcconfig */,
+				E06DECB35ACDECF5C1262AB357B93D7D /* Pods-OverlapStack_Tests.release.xcconfig */,
+			);
+			name = "Pods-OverlapStack_Tests";
+			path = "Target Support Files/Pods-OverlapStack_Tests";
+			sourceTree = "<group>";
+		};
+		3A2C4D5C2D190ADA00AFC722 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A5950FF2D1935C500FBD0D6 /* OverlapItemCache.swift */,
+				3A2C4D5F2D190B3300AFC722 /* OverlapDirection.swift */,
+				3A8C5A2D2D17F4BA00248729 /* CustomOffset.swift */,
+				3A2C4D5D2D190AE100AFC722 /* OverlapStackAlignment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A5951012D1935E500FBD0D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A5951062D1A48BE00FBD0D6 /* CGRect+Extensions.swift */,
+				3A5951042D19378400FBD0D6 /* CGFloat+Extensions.swift */,
+				3A5951022D1935F400FBD0D6 /* LayoutSubview+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3A8C5A282D17EE1800248729 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3A5951012D1935E500FBD0D6 /* Extensions */,
+				3A2C4D5C2D190ADA00AFC722 /* Model */,
+				3A8C5A382D18100100248729 /* Implementation */,
+				3A8C5A352D180F2400248729 /* Layout */,
+			);
+			name = Classes;
+			path = OverlapStack/Classes;
+			sourceTree = "<group>";
+		};
+		3A8C5A352D180F2400248729 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				3A8C5A362D180F5100248729 /* OverlapHStackLayout.swift */,
+				3A8C5A292D17EE4300248729 /* OverlapStackLayout.swift */,
+				3A8C5A332D180F1D00248729 /* OverlapVStackLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		3A8C5A382D18100100248729 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				3A8C5A3B2D1842F600248729 /* OverlapHStack.swift */,
+				3A8C5A392D18100900248729 /* OverlapVStack.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		8CD2C246FFBFB9FDD1252AC9F825300B /* OverlapStack */ = {
+			isa = PBXGroup;
+			children = (
+				3A8C5A282D17EE1800248729 /* Classes */,
+				27B5EF2293346019C824A38757A70528 /* Pod */,
+				94A5071B5FEF97C1902A67B3EB61769B /* Support Files */,
+			);
+			name = OverlapStack;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		94A5071B5FEF97C1902A67B3EB61769B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9968C4CDDA63E55B59D3C6C16668DDA9 /* OverlapStack.modulemap */,
+				05FFA9EE716B36FB61586815A29154BD /* OverlapStack-dummy.m */,
+				10BDED8F16D933A0764469A4D06BA65C /* OverlapStack-Info.plist */,
+				BE02C6A455016083918523B23672A571 /* OverlapStack-prefix.pch */,
+				FBC85569C490C6125E82D2DBCD398367 /* OverlapStack-umbrella.h */,
+				83FD6718C49D77D1C6561F104A665E69 /* OverlapStack.debug.xcconfig */,
+				6049ACC1D36F673C67D835A1BD1A1F62 /* OverlapStack.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/OverlapStack";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D8132B98B4A4067B30C76CB0E6C66845 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				11027CEDC4E38F3D6C64622E8FB08354 /* Products */,
+				E88AB03811C151789683B45BC9824D0A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8132B98B4A4067B30C76CB0E6C66845 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CD2C246FFBFB9FDD1252AC9F825300B /* OverlapStack */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E88AB03811C151789683B45BC9824D0A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D32CFD58BB56804C599D83F193C2E9C /* Pods-OverlapStack_Example */,
+				2BAC90EC266B870161AF0A42457D669F /* Pods-OverlapStack_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5800B71AF6CFFCE65336C1938F893E05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D86FA8549416B7D27715FB913EDFA5F /* OverlapStack-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7814F8680F6FA3EC86770A37D0525148 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9517C0886203E0A30BC3604611CA032 /* Pods-OverlapStack_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20D4B78175F698AE351D9125108EDA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA5ADA822FEF109B726A9F6D859973B /* Pods-OverlapStack_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		151F41BDAE0D460CD5FDFE97FDCBA866 /* OverlapStack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D176361257053CC73FFB09995F08AC27 /* Build configuration list for PBXNativeTarget "OverlapStack" */;
+			buildPhases = (
+				5800B71AF6CFFCE65336C1938F893E05 /* Headers */,
+				02177BB94F2E1F8BF2E3B93B1C7B8A07 /* Sources */,
+				233574A85066E51D4C2206A9622263A0 /* Frameworks */,
+				4B407624FCC32958FC7A3A3DA896EBBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OverlapStack;
+			productName = OverlapStack;
+			productReference = 3AC28138DC1534643D9CC4E559949C32 /* OverlapStack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		24B950E0595286445723BB97418C1DDD /* Pods-OverlapStack_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843BD8047DCA27479B90BBFB076CD785 /* Build configuration list for PBXNativeTarget "Pods-OverlapStack_Tests" */;
+			buildPhases = (
+				D20D4B78175F698AE351D9125108EDA6 /* Headers */,
+				058DA62F09E9A403E562651F15D3A9DD /* Sources */,
+				CD69E1A009A4AD6A1D5B73D4DBC73B9E /* Frameworks */,
+				3ED6CD9D4D3511F0523F233B6E3660A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33A09B7797C0E20C271FEC8337612086 /* PBXTargetDependency */,
+			);
+			name = "Pods-OverlapStack_Tests";
+			productName = Pods_OverlapStack_Tests;
+			productReference = 5C452863038E01BD643A8B3E6ADC8B4B /* Pods_OverlapStack_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4768ADE2C47C7221B7DB3C2B46FBA7F8 /* Pods-OverlapStack_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12A5922E2FC9AA69D7D2EFF881144851 /* Build configuration list for PBXNativeTarget "Pods-OverlapStack_Example" */;
+			buildPhases = (
+				7814F8680F6FA3EC86770A37D0525148 /* Headers */,
+				FF296012E94086E8B81B266F70FDCA2F /* Sources */,
+				0089D4F784B3CA056D3C4F25D763A12D /* Frameworks */,
+				3E4FBD1357319418A6CAD2235C6780AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1FD3DD8FF2E7C71FFC6DC7A177531D9 /* PBXTargetDependency */,
+			);
+			name = "Pods-OverlapStack_Example";
+			productName = Pods_OverlapStack_Example;
+			productReference = B1C8D9C37094599C97006471E985A59B /* Pods_OverlapStack_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 11027CEDC4E38F3D6C64622E8FB08354 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				151F41BDAE0D460CD5FDFE97FDCBA866 /* OverlapStack */,
+				4768ADE2C47C7221B7DB3C2B46FBA7F8 /* Pods-OverlapStack_Example */,
+				24B950E0595286445723BB97418C1DDD /* Pods-OverlapStack_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E4FBD1357319418A6CAD2235C6780AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED6CD9D4D3511F0523F233B6E3660A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B407624FCC32958FC7A3A3DA896EBBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02177BB94F2E1F8BF2E3B93B1C7B8A07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8C5A3C2D1842FA00248729 /* OverlapHStack.swift in Sources */,
+				3A5951052D19378B00FBD0D6 /* CGFloat+Extensions.swift in Sources */,
+				3A8C5A372D180F5200248729 /* OverlapHStackLayout.swift in Sources */,
+				3A2C4D602D190B3F00AFC722 /* OverlapDirection.swift in Sources */,
+				3A8C5A3A2D18101000248729 /* OverlapVStack.swift in Sources */,
+				3A8C5A2A2D17EF0600248729 /* OverlapStackLayout.swift in Sources */,
+				3A2C4D5E2D190AE200AFC722 /* OverlapStackAlignment.swift in Sources */,
+				3A5951072D1A48C500FBD0D6 /* CGRect+Extensions.swift in Sources */,
+				3A5951002D1935CA00FBD0D6 /* OverlapItemCache.swift in Sources */,
+				3A8C5A2E2D17F4BE00248729 /* CustomOffset.swift in Sources */,
+				3A8C5A342D180F1E00248729 /* OverlapVStackLayout.swift in Sources */,
+				00773553FB9EAA2DB4F2053A90CBCFD2 /* OverlapStack-dummy.m in Sources */,
+				3A5951032D1935F900FBD0D6 /* LayoutSubview+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		058DA62F09E9A403E562651F15D3A9DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1C58019EF48F2F412246ADF6297A1A /* Pods-OverlapStack_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF296012E94086E8B81B266F70FDCA2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5281FF3B41149BDE2E10DF41399876EE /* Pods-OverlapStack_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33A09B7797C0E20C271FEC8337612086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-OverlapStack_Example";
+			target = 4768ADE2C47C7221B7DB3C2B46FBA7F8 /* Pods-OverlapStack_Example */;
+			targetProxy = 80743BE040B35DA4E8DE0362143A5ACA /* PBXContainerItemProxy */;
+		};
+		A1FD3DD8FF2E7C71FFC6DC7A177531D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OverlapStack;
+			target = 151F41BDAE0D460CD5FDFE97FDCBA866 /* OverlapStack */;
+			targetProxy = 7FD5A541C56764324DCFDA6ED3515F46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12D3F5761024401E12520D684DC75A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E06DECB35ACDECF5C1262AB357B93D7D /* Pods-OverlapStack_Tests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-OverlapStack_Tests/Pods-OverlapStack_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OverlapStack_Tests/Pods-OverlapStack_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1B8AFBBB33CBD23599BDBE748BD6503B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83FD6718C49D77D1C6561F104A665E69 /* OverlapStack.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/OverlapStack/OverlapStack-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/OverlapStack/OverlapStack-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OverlapStack/OverlapStack.modulemap";
+				PRODUCT_MODULE_NAME = OverlapStack;
+				PRODUCT_NAME = OverlapStack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7F4E1BFFA61014FBF2ACD8EA72DE844F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6049ACC1D36F673C67D835A1BD1A1F62 /* OverlapStack.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/OverlapStack/OverlapStack-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/OverlapStack/OverlapStack-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OverlapStack/OverlapStack.modulemap";
+				PRODUCT_MODULE_NAME = OverlapStack;
+				PRODUCT_NAME = OverlapStack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE2BEF71C15FFC3B18672D646DE2E23A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 854D6139E75F2098174098638AAFB3D7 /* Pods-OverlapStack_Example.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-OverlapStack_Example/Pods-OverlapStack_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OverlapStack_Example/Pods-OverlapStack_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DAA52CA27040E641F048E3C3DDE77FB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8538ACDC8680A470CC6B6903762A72D /* Pods-OverlapStack_Example.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-OverlapStack_Example/Pods-OverlapStack_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OverlapStack_Example/Pods-OverlapStack_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F38F02DBA9AA4B9441C7BE54271B0D8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92CEC481EA0DD63CE10B32875F8F77D5 /* Pods-OverlapStack_Tests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-OverlapStack_Tests/Pods-OverlapStack_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OverlapStack_Tests/Pods-OverlapStack_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12A5922E2FC9AA69D7D2EFF881144851 /* Build configuration list for PBXNativeTarget "Pods-OverlapStack_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA52CA27040E641F048E3C3DDE77FB8 /* Debug */,
+				AE2BEF71C15FFC3B18672D646DE2E23A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		843BD8047DCA27479B90BBFB076CD785 /* Build configuration list for PBXNativeTarget "Pods-OverlapStack_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F38F02DBA9AA4B9441C7BE54271B0D8B /* Debug */,
+				12D3F5761024401E12520D684DC75A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D176361257053CC73FFB09995F08AC27 /* Build configuration list for PBXNativeTarget "OverlapStack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B8AFBBB33CBD23599BDBE748BD6503B /* Debug */,
+				7F4E1BFFA61014FBF2ACD8EA72DE844F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

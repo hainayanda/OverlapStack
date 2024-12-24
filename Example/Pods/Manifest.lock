@@ -1,0 +1,16 @@
+PODS:
+  - OverlapStack (0.1.0)
+
+DEPENDENCIES:
+  - OverlapStack (from `../`)
+
+EXTERNAL SOURCES:
+  OverlapStack:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OverlapStack: 9834bab003af9b7ad540727959cf44b3962d916c
+
+PODFILE CHECKSUM: c626094b1b70c4aa77adc784af22bfa8ca14504d
+
+COCOAPODS: 1.16.2
