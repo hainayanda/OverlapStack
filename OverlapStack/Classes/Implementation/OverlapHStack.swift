@@ -7,48 +7,70 @@
 
 import SwiftUI
 
+// MARK: OverlapHStack
+
+/// View that will arrange it's subview in overlapping horizontal stack
 public struct OverlapHStack<Content>: View where Content: View {
     
-    let alignment: OverlapStackAlignment
-    let direction: OverlapDirection
+    // MARK: Properties
+    
+    let alignment: OverlapHStackAlignment
+    let arrangement: HorizontalOverlapArrangement
     let defaultOverlapOffset: CGFloat
     
     private let content: () -> Content
     
+    // MARK: Body
+    
     public var body: some View {
-        OverlapHStackLayout(alignment: alignment, direction: direction, defaultOverlapOffset: defaultOverlapOffset) {
-            content()
+        switch arrangement {
+        case .stackedFromTrailing:
+            OverlapReverseHStackLayout(alignment: alignment, defaultOverlapOffset: defaultOverlapOffset) {
+                content()
+            }
+        case .stackedFromLeading:
+            OverlapHStackLayout(alignment: alignment, defaultOverlapOffset: defaultOverlapOffset) {
+                content()
+            }
         }
     }
     
+    // MARK: Init
+    
+    /// Initialize OverlapHStack, view that will arrange it's subview in overlapping stack
+    /// - Parameters:
+    ///   - alignment: alignment of the stack, default is centered
+    ///   - arrangement: arrangement of the view, default is stackedFromTrailing
+    ///   - defaultOffset: default offset from each overlapping view, default is 24
+    ///   - content: the view content
     public init(
-        alignment: OverlapStackAlignment = .centered,
-        direction: OverlapDirection = .lastOnTop,
-        overlapOffset: CGFloat = 24,
+        alignment: OverlapHStackAlignment = .centered,
+        arrangement: HorizontalOverlapArrangement = .stackedFromTrailing,
+        defaultOffset: CGFloat = 24,
         @ViewBuilder content: @escaping () -> Content) {
             self.alignment = alignment
-            self.direction = direction
+            self.arrangement = arrangement
             self.content = content
-            self.defaultOverlapOffset = overlapOffset
+            self.defaultOverlapOffset = defaultOffset
         }
 }
 
 // MARK: Preview
 #if DEBUG
 
-private func hStack(alignment: OverlapStackAlignment) -> some View {
+private func hStack(alignment: OverlapHStackAlignment, arrangement: HorizontalOverlapArrangement) -> some View {
     ScrollView(.horizontal) {
-        OverlapHStack(alignment: alignment) {
+        OverlapHStack(alignment: alignment, arrangement: arrangement) {
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(.red)
                 .frame(width: 100, height: 300)
                 .shadow(radius: 9)
-                .alignmentOffset(12)
+                .overlapAlignmentOffset(12)
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(.orange)
                 .frame(width: 100, height: 300)
                 .shadow(radius: 9)
-                .alignmentOffset(-12)
+                .overlapAlignmentOffset(-12)
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(.yellow)
                 .frame(width: 100, height: 300)
@@ -58,12 +80,12 @@ private func hStack(alignment: OverlapStackAlignment) -> some View {
                 .foregroundColor(.green)
                 .frame(width: 100, height: 300)
                 .shadow(radius: 9)
-                .expanded(true, leading: 12, trailing: 12)
+                .expandOverlap(true, leading: 12, trailing: 12)
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(.cyan)
                 .frame(width: 100, height: 300)
                 .shadow(radius: 9)
-                .expanded(true, trailing: 12)
+                .expandOverlap(true, trailing: 12)
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(.blue)
                 .frame(width: 100, height: 300)
@@ -77,15 +99,27 @@ private func hStack(alignment: OverlapStackAlignment) -> some View {
     }
 }
 
-#Preview("leading") {
-    hStack(alignment: .leading)
+#Preview("leading leadingToTrailing") {
+    hStack(alignment: .leading, arrangement: .stackedFromLeading)
 }
 
-#Preview("centered") {
-    hStack(alignment: .centered)
+#Preview("centered leadingToTrailing") {
+    hStack(alignment: .centered, arrangement: .stackedFromLeading)
 }
 
-#Preview("trailing") {
-    hStack(alignment: .trailing)
+#Preview("trailing leadingToTrailing") {
+    hStack(alignment: .trailing, arrangement: .stackedFromLeading)
+}
+
+#Preview("leading trailingToLeading") {
+    hStack(alignment: .leading, arrangement: .stackedFromTrailing)
+}
+
+#Preview("centered trailingToLeading") {
+    hStack(alignment: .centered, arrangement: .stackedFromTrailing)
+}
+
+#Preview("trailing trailingToLeading") {
+    hStack(alignment: .trailing, arrangement: .stackedFromTrailing)
 }
 #endif

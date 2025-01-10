@@ -7,48 +7,70 @@
 
 import SwiftUI
 
+// MARK: OverlapVStack
+
+/// View that will arrange it's subview in overlapping vertical stack
 public struct OverlapVStack<Content>: View where Content: View {
     
-    let alignment: OverlapStackAlignment
-    let direction: OverlapDirection
+    // MARK: Properties
+    
+    let alignment: OverlapVStackAlignment
+    let arrangement: VerticalOverlapArrangement
     let defaultOverlapOffset: CGFloat
     
     private let content: () -> Content
     
+    // MARK: Body
+    
     public var body: some View {
-        OverlapVStackLayout(alignment: alignment, direction: direction, defaultOverlapOffset: defaultOverlapOffset) {
-            content()
+        switch arrangement {
+        case .stackedFromBottom:
+            OverlapReverseVStackLayout(alignment: alignment, defaultOverlapOffset: defaultOverlapOffset) {
+                content()
+            }
+        case .stackedFromTop:
+            OverlapVStackLayout(alignment: alignment, defaultOverlapOffset: defaultOverlapOffset) {
+                content()
+            }
         }
     }
     
+    // MARK: Init
+    
+    /// Initialize OverlapVStack, view that will arrange it's subview in overlapping stack
+    /// - Parameters:
+    ///   - alignment: alignment of the stack, default is centered
+    ///   - arrangement: arrangement of the view, default is stackedFromBottom
+    ///   - defaultOffset: default offset from each overlapping view, default is 24
+    ///   - content: the view content
     public init(
-        alignment: OverlapStackAlignment = .centered,
-        direction: OverlapDirection = .lastOnTop,
-        overlapOffset: CGFloat = 24,
+        alignment: OverlapVStackAlignment = .centered,
+        arrangement: VerticalOverlapArrangement = .stackedFromBottom,
+        defaultOffset: CGFloat = 24,
         @ViewBuilder content: @escaping () -> Content) {
             self.alignment = alignment
-            self.direction = direction
+            self.arrangement = arrangement
             self.content = content
-            self.defaultOverlapOffset = overlapOffset
+            self.defaultOverlapOffset = defaultOffset
         }
 }
 
 // MARK: Preview
 #if DEBUG
 
-private func vStack(alignment: OverlapStackAlignment) -> some View {
+private func vStack(alignment: OverlapVStackAlignment, arrangement: VerticalOverlapArrangement) -> some View {
     ScrollView(.vertical) {
-        OverlapVStack(alignment: alignment) {
+        OverlapVStack(alignment: alignment, arrangement: arrangement) {
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(.red)
                 .frame(width: 300, height: 100)
                 .shadow(radius: 9)
-                .alignmentOffset(12)
+                .overlapAlignmentOffset(12)
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(.orange)
                 .frame(width: 300, height: 100)
                 .shadow(radius: 9)
-                .alignmentOffset(-12)
+                .overlapAlignmentOffset(-12)
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(.yellow)
                 .frame(width: 300, height: 100)
@@ -58,12 +80,12 @@ private func vStack(alignment: OverlapStackAlignment) -> some View {
                 .foregroundColor(.green)
                 .frame(width: 300, height: 100)
                 .shadow(radius: 9)
-                .expanded(true, leading: 12, trailing: 12)
+                .expandOverlap(true, leading: 12, trailing: 12)
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(.cyan)
                 .frame(width: 300, height: 100)
                 .shadow(radius: 9)
-                .expanded(true, trailing: 12)
+                .expandOverlap(true, trailing: 12)
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(.blue)
                 .frame(width: 300, height: 100)
@@ -77,15 +99,27 @@ private func vStack(alignment: OverlapStackAlignment) -> some View {
     }
 }
 
-#Preview("leading") {
-    vStack(alignment: .leading)
+#Preview("top bottomToTop") {
+    vStack(alignment: .top, arrangement: .stackedFromBottom)
 }
 
-#Preview("centered") {
-    vStack(alignment: .centered)
+#Preview("centered bottomToTop") {
+    vStack(alignment: .centered, arrangement: .stackedFromBottom)
 }
 
-#Preview("trailing") {
-    vStack(alignment: .trailing)
+#Preview("bottom bottomToTop") {
+    vStack(alignment: .bottom, arrangement: .stackedFromBottom)
+}
+
+#Preview("top topToBottom") {
+    vStack(alignment: .top, arrangement: .stackedFromTop)
+}
+
+#Preview("centered topToBottom") {
+    vStack(alignment: .centered, arrangement: .stackedFromTop)
+}
+
+#Preview("bottom topToBottom") {
+    vStack(alignment: .bottom, arrangement: .stackedFromTop)
 }
 #endif

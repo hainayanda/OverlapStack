@@ -6,8 +6,14 @@
 //
 
 
-public enum OverlapStackAlignment {
+public enum OverlapHStackAlignment {
     case centered
     case leading
     case trailing
+}
+
+public enum OverlapVStackAlignment {
+    case centered
+    case top
+    case bottom
 }

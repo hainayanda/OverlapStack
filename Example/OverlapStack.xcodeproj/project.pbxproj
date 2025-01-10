@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A5951092D1A4BD400FBD0D6 /* CGRectExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5951082D1A4BCA00FBD0D6 /* CGRectExtensionsTests.swift */; };
+		3A59510B2D1A603300FBD0D6 /* CGFloatExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59510A2D1A602900FBD0D6 /* CGFloatExtensionsTests.swift */; };
 		3A8C5A3E2D1845E400248729 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A3D2D1845DE00248729 /* CardStackView.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		C02975E6E92208886E89B1AC /* Pods_OverlapStack_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE9DFCD392E5412945E4135 /* Pods_OverlapStack_Example.framework */; };
 		EDB46240599C23AA4D1B8217 /* Pods_OverlapStack_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFADBADC97A3D8BDC8DDAC5 /* Pods_OverlapStack_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,8 @@
 		2AFADBADC97A3D8BDC8DDAC5 /* Pods_OverlapStack_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverlapStack_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A94D50BB7E21F4BAFAFA3C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		371965799DF14202953C419A /* OverlapStack.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OverlapStack.podspec; path = ../OverlapStack.podspec; sourceTree = "<group>"; };
+		3A5951082D1A4BCA00FBD0D6 /* CGRectExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtensionsTests.swift; sourceTree = "<group>"; };
+		3A59510A2D1A602900FBD0D6 /* CGFloatExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtensionsTests.swift; sourceTree = "<group>"; };
 		3A8C5A3D2D1845DE00248729 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
 		433B7B45FA1B28540A02737E /* Pods-OverlapStack_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverlapStack_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OverlapStack_Tests/Pods-OverlapStack_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DAD222DA1CAAF2D605420A9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -45,7 +48,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* OverlapStack_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverlapStack_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		BDE9DFCD392E5412945E4135 /* Pods_OverlapStack_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OverlapStack_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD34792233E62B7CA23D12DA /* Pods-OverlapStack_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverlapStack_Tests.release.xcconfig"; path = "Target Support Files/Pods-OverlapStack_Tests/Pods-OverlapStack_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E1F5696CC804B7D5D7928EF4 /* Pods-OverlapStack_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OverlapStack_Example.debug.xcconfig"; path = "Target Support Files/Pods-OverlapStack_Example/Pods-OverlapStack_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,7 +120,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				3A59510A2D1A602900FBD0D6 /* CGFloatExtensionsTests.swift */,
+				3A5951082D1A4BCA00FBD0D6 /* CGRectExtensionsTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -344,7 +347,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				3A59510B2D1A603300FBD0D6 /* CGFloatExtensionsTests.swift in Sources */,
+				3A5951092D1A4BD400FBD0D6 /* CGRectExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

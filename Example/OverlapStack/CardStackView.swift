@@ -17,10 +17,10 @@ struct CardStackView: View {
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView(.vertical) {
-                OverlapVStack(alignment: .centered, direction: .lastOnTop, overlapOffset: 48) {
+                OverlapVStack(alignment: .centered, arrangement: .stackedFromTop, defaultOffset: 48) {
                     ForEach(0..<20) { index in
                         CardView(index: index, color: colors[index % colors.count], selected: selectedIndex == index)
-                            .expanded(selectedIndex == index, spacing: 12)
+                            .expandOverlap(selectedIndex == index, leading: index == 19 ? 48 : 12, trailing: 12)
                             .id(index)
                             .onTapGesture {
                                 withAnimation(.snappy) {
@@ -30,6 +30,7 @@ struct CardStackView: View {
                             }
                     }
                 }
+                .padding()
             }
         }
     }
@@ -52,20 +53,18 @@ struct CardView: View {
             }
             .frame(maxWidth: 300)
             Spacer().frame(height: 18)
-            if selected {
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-                    .foregroundColor(.white)
-                    .font(.body)
-                    .fontWeight(.regular)
-                    .frame(maxWidth: 310)
-            }
+            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                .foregroundColor(.white)
+                .font(.body)
+                .fontWeight(.regular)
+                .frame(maxWidth: 300)
         }
         .padding()
         .background {
             RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(color)
-                .shadow(radius: 9)
+                .shadow(color: .black.opacity(0.2) ,radius: 9)
         }
+        
     }
-    
 }

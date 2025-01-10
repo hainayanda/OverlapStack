@@ -8,7 +8,8 @@
 import SwiftUI
 
 extension CGRect {
-    @inlinable var circlingAxisSize: CGSize {
+    /// Rotate the rectangle along x and y axis and calculate the projected size in x,y coordinate
+    @inlinable var axisRotationalSize: CGSize {
         CGSize(
             width: max(abs(minX), maxX) * 2,
             height: max(abs(minY), maxY) * 2

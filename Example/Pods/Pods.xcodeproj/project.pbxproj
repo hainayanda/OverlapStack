@@ -10,17 +10,24 @@
 		00773553FB9EAA2DB4F2053A90CBCFD2 /* OverlapStack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FFA9EE716B36FB61586815A29154BD /* OverlapStack-dummy.m */; };
 		2DA5ADA822FEF109B726A9F6D859973B /* Pods-OverlapStack_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C35E7A012D9AFF3D8127CF685C1A50F /* Pods-OverlapStack_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A2C4D5E2D190AE200AFC722 /* OverlapStackAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C4D5D2D190AE100AFC722 /* OverlapStackAlignment.swift */; };
-		3A2C4D602D190B3F00AFC722 /* OverlapDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C4D5F2D190B3300AFC722 /* OverlapDirection.swift */; };
+		3A2C4D602D190B3F00AFC722 /* OverlapArrangement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C4D5F2D190B3300AFC722 /* OverlapArrangement.swift */; };
 		3A5951002D1935CA00FBD0D6 /* OverlapItemCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5950FF2D1935C500FBD0D6 /* OverlapItemCache.swift */; };
-		3A5951032D1935F900FBD0D6 /* LayoutSubview+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5951022D1935F400FBD0D6 /* LayoutSubview+Extensions.swift */; };
 		3A5951052D19378B00FBD0D6 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5951042D19378400FBD0D6 /* CGFloat+Extensions.swift */; };
 		3A5951072D1A48C500FBD0D6 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5951062D1A48BE00FBD0D6 /* CGRect+Extensions.swift */; };
+		3A59510D2D1A6DEB00FBD0D6 /* CGSize+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59510C2D1A6DE500FBD0D6 /* CGSize+Extensions.swift */; };
 		3A8C5A2A2D17EF0600248729 /* OverlapStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A292D17EE4300248729 /* OverlapStackLayout.swift */; };
 		3A8C5A2E2D17F4BE00248729 /* CustomOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A2D2D17F4BA00248729 /* CustomOffset.swift */; };
 		3A8C5A342D180F1E00248729 /* OverlapVStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A332D180F1D00248729 /* OverlapVStackLayout.swift */; };
 		3A8C5A372D180F5200248729 /* OverlapHStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A362D180F5100248729 /* OverlapHStackLayout.swift */; };
 		3A8C5A3A2D18101000248729 /* OverlapVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A392D18100900248729 /* OverlapVStack.swift */; };
 		3A8C5A3C2D1842FA00248729 /* OverlapHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C5A3B2D1842F600248729 /* OverlapHStack.swift */; };
+		3AF613ED2D27BF3300516931 /* OverlapReverseVStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF613EC2D27BF2B00516931 /* OverlapReverseVStackLayout.swift */; };
+		3AF613EF2D27C92400516931 /* OverlapSplitAxisStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF613EE2D27C92300516931 /* OverlapSplitAxisStackLayout.swift */; };
+		3AF613F12D27C94900516931 /* OverlapVAxisStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF613F02D27C94500516931 /* OverlapVAxisStackLayout.swift */; };
+		3AF613F32D27CA5000516931 /* OverlapHAxisStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF613F22D27CA4800516931 /* OverlapHAxisStackLayout.swift */; };
+		3AF613F52D27CC0800516931 /* OverlapReverseHStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF613F42D27CC0100516931 /* OverlapReverseHStackLayout.swift */; };
+		3AF613F82D27D06400516931 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF613F72D27D05F00516931 /* View+Extensions.swift */; };
+		3AF613FA2D27D08900516931 /* LayoutSubview+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF613F92D27D08500516931 /* LayoutSubview+Extensions.swift */; };
 		5281FF3B41149BDE2E10DF41399876EE /* Pods-OverlapStack_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C21D0666CE3BBFD369699DFB3DE9C4FE /* Pods-OverlapStack_Example-dummy.m */; };
 		6D86FA8549416B7D27715FB913EDFA5F /* OverlapStack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC85569C490C6125E82D2DBCD398367 /* OverlapStack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		757DB4AEC188C6D4A79AB8F37F3370BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
@@ -54,11 +61,11 @@
 		1D6EE06A49F53AF74ED7725ECC1DCB7B /* Pods-OverlapStack_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OverlapStack_Example.modulemap"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3A2C4D5D2D190AE100AFC722 /* OverlapStackAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapStackAlignment.swift; sourceTree = "<group>"; };
-		3A2C4D5F2D190B3300AFC722 /* OverlapDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapDirection.swift; sourceTree = "<group>"; };
+		3A2C4D5F2D190B3300AFC722 /* OverlapArrangement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapArrangement.swift; sourceTree = "<group>"; };
 		3A5950FF2D1935C500FBD0D6 /* OverlapItemCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapItemCache.swift; sourceTree = "<group>"; };
-		3A5951022D1935F400FBD0D6 /* LayoutSubview+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutSubview+Extensions.swift"; sourceTree = "<group>"; };
 		3A5951042D19378400FBD0D6 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		3A5951062D1A48BE00FBD0D6 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
+		3A59510C2D1A6DE500FBD0D6 /* CGSize+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extensions.swift"; sourceTree = "<group>"; };
 		3A8C5A292D17EE4300248729 /* OverlapStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapStackLayout.swift; sourceTree = "<group>"; };
 		3A8C5A2D2D17F4BA00248729 /* CustomOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOffset.swift; sourceTree = "<group>"; };
 		3A8C5A332D180F1D00248729 /* OverlapVStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapVStackLayout.swift; sourceTree = "<group>"; };
@@ -66,6 +73,13 @@
 		3A8C5A392D18100900248729 /* OverlapVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapVStack.swift; sourceTree = "<group>"; };
 		3A8C5A3B2D1842F600248729 /* OverlapHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapHStack.swift; sourceTree = "<group>"; };
 		3AC28138DC1534643D9CC4E559949C32 /* OverlapStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OverlapStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF613EC2D27BF2B00516931 /* OverlapReverseVStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapReverseVStackLayout.swift; sourceTree = "<group>"; };
+		3AF613EE2D27C92300516931 /* OverlapSplitAxisStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapSplitAxisStackLayout.swift; sourceTree = "<group>"; };
+		3AF613F02D27C94500516931 /* OverlapVAxisStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapVAxisStackLayout.swift; sourceTree = "<group>"; };
+		3AF613F22D27CA4800516931 /* OverlapHAxisStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapHAxisStackLayout.swift; sourceTree = "<group>"; };
+		3AF613F42D27CC0100516931 /* OverlapReverseHStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlapReverseHStackLayout.swift; sourceTree = "<group>"; };
+		3AF613F72D27D05F00516931 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		3AF613F92D27D08500516931 /* LayoutSubview+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutSubview+Extensions.swift"; sourceTree = "<group>"; };
 		3C35E7A012D9AFF3D8127CF685C1A50F /* Pods-OverlapStack_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OverlapStack_Tests-umbrella.h"; sourceTree = "<group>"; };
 		42EA4149F9A35FD746F60DA7F9A27A67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4569794B87109962AB6868D32E684B5D /* Pods-OverlapStack_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OverlapStack_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -178,9 +192,9 @@
 		3A2C4D5C2D190ADA00AFC722 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3A5950FF2D1935C500FBD0D6 /* OverlapItemCache.swift */,
-				3A2C4D5F2D190B3300AFC722 /* OverlapDirection.swift */,
 				3A8C5A2D2D17F4BA00248729 /* CustomOffset.swift */,
+				3A2C4D5F2D190B3300AFC722 /* OverlapArrangement.swift */,
+				3A5950FF2D1935C500FBD0D6 /* OverlapItemCache.swift */,
 				3A2C4D5D2D190AE100AFC722 /* OverlapStackAlignment.swift */,
 			);
 			path = Model;
@@ -189,9 +203,11 @@
 		3A5951012D1935E500FBD0D6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3A5951062D1A48BE00FBD0D6 /* CGRect+Extensions.swift */,
 				3A5951042D19378400FBD0D6 /* CGFloat+Extensions.swift */,
-				3A5951022D1935F400FBD0D6 /* LayoutSubview+Extensions.swift */,
+				3A5951062D1A48BE00FBD0D6 /* CGRect+Extensions.swift */,
+				3A59510C2D1A6DE500FBD0D6 /* CGSize+Extensions.swift */,
+				3AF613F92D27D08500516931 /* LayoutSubview+Extensions.swift */,
+				3AF613F72D27D05F00516931 /* View+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,9 +227,9 @@
 		3A8C5A352D180F2400248729 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				3A8C5A362D180F5100248729 /* OverlapHStackLayout.swift */,
-				3A8C5A292D17EE4300248729 /* OverlapStackLayout.swift */,
-				3A8C5A332D180F1D00248729 /* OverlapVStackLayout.swift */,
+				3AF613F62D27CCCD00516931 /* Base */,
+				3AF613EA2D27BEDD00516931 /* Normal */,
+				3AF613EB2D27BF1800516931 /* Reverse */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -225,6 +241,35 @@
 				3A8C5A392D18100900248729 /* OverlapVStack.swift */,
 			);
 			path = Implementation;
+			sourceTree = "<group>";
+		};
+		3AF613EA2D27BEDD00516931 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				3A8C5A362D180F5100248729 /* OverlapHStackLayout.swift */,
+				3A8C5A332D180F1D00248729 /* OverlapVStackLayout.swift */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		3AF613EB2D27BF1800516931 /* Reverse */ = {
+			isa = PBXGroup;
+			children = (
+				3AF613F42D27CC0100516931 /* OverlapReverseHStackLayout.swift */,
+				3AF613EC2D27BF2B00516931 /* OverlapReverseVStackLayout.swift */,
+			);
+			path = Reverse;
+			sourceTree = "<group>";
+		};
+		3AF613F62D27CCCD00516931 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3AF613EE2D27C92300516931 /* OverlapSplitAxisStackLayout.swift */,
+				3AF613F22D27CA4800516931 /* OverlapHAxisStackLayout.swift */,
+				3A8C5A292D17EE4300248729 /* OverlapStackLayout.swift */,
+				3AF613F02D27C94500516931 /* OverlapVAxisStackLayout.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		8CD2C246FFBFB9FDD1252AC9F825300B /* OverlapStack */ = {
@@ -441,19 +486,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF613EF2D27C92400516931 /* OverlapSplitAxisStackLayout.swift in Sources */,
 				3A8C5A3C2D1842FA00248729 /* OverlapHStack.swift in Sources */,
+				3AF613F12D27C94900516931 /* OverlapVAxisStackLayout.swift in Sources */,
 				3A5951052D19378B00FBD0D6 /* CGFloat+Extensions.swift in Sources */,
 				3A8C5A372D180F5200248729 /* OverlapHStackLayout.swift in Sources */,
-				3A2C4D602D190B3F00AFC722 /* OverlapDirection.swift in Sources */,
+				3A2C4D602D190B3F00AFC722 /* OverlapArrangement.swift in Sources */,
+				3AF613ED2D27BF3300516931 /* OverlapReverseVStackLayout.swift in Sources */,
 				3A8C5A3A2D18101000248729 /* OverlapVStack.swift in Sources */,
+				3AF613F52D27CC0800516931 /* OverlapReverseHStackLayout.swift in Sources */,
 				3A8C5A2A2D17EF0600248729 /* OverlapStackLayout.swift in Sources */,
+				3A59510D2D1A6DEB00FBD0D6 /* CGSize+Extensions.swift in Sources */,
+				3AF613F82D27D06400516931 /* View+Extensions.swift in Sources */,
 				3A2C4D5E2D190AE200AFC722 /* OverlapStackAlignment.swift in Sources */,
 				3A5951072D1A48C500FBD0D6 /* CGRect+Extensions.swift in Sources */,
 				3A5951002D1935CA00FBD0D6 /* OverlapItemCache.swift in Sources */,
+				3AF613FA2D27D08900516931 /* LayoutSubview+Extensions.swift in Sources */,
+				3AF613F32D27CA5000516931 /* OverlapHAxisStackLayout.swift in Sources */,
 				3A8C5A2E2D17F4BE00248729 /* CustomOffset.swift in Sources */,
 				3A8C5A342D180F1E00248729 /* OverlapVStackLayout.swift in Sources */,
 				00773553FB9EAA2DB4F2053A90CBCFD2 /* OverlapStack-dummy.m in Sources */,
-				3A5951032D1935F900FBD0D6 /* LayoutSubview+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
