@@ -169,7 +169,7 @@ OverlapHStack {
 
 You will end up with a view like this:
 
-![OverlapHStack](OverlapHStack.png)
+![OverlapHStack](overlapHStack.png)
 
 You can pass an `OverlapHStackAlignment` and `HorizontalOverlapArrangement` to `OverlapHStack` init parameters to configure the View arrangement to meet your need:
 
