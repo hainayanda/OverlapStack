@@ -1,1 +1,3 @@
 *.xcuserstate
+*.xcworkspacedata
+.swiftpm/xcode/xcuserdata/nayandahaberty.xcuserdatad/xcschemes/xcschememanagement.plist
