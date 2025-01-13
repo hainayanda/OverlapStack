@@ -29,7 +29,9 @@ struct OverlapReverseHStackLayout {
 }
 
 // MARK: OverlapReverseHStackLayout + OverlapStackLayout
-
+// will put the item backward to negative x, so it will stacked from right to left
+// then the position will be adjusted on placing an item
+// once the size of the stack is determined and can be used to determine the real x
 extension OverlapReverseHStackLayout: OverlapHAxisStackLayout {
     
     @inlinable func widthThatFitsAfter(adding item: OverlapItemCache, previousCalculatedWidth: CGFloat) -> CGFloat {

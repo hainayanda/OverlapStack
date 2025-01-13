@@ -40,12 +40,12 @@ public struct OverlapVStack<Content>: View where Content: View {
     /// Initialize OverlapVStack, view that will arrange it's subview in overlapping stack
     /// - Parameters:
     ///   - alignment: alignment of the stack, default is centered
-    ///   - arrangement: arrangement of the view, default is stackedFromBottom
+    ///   - arrangement: arrangement of the view, default is stackedFromTop
     ///   - defaultOffset: default offset from each overlapping view, default is 24
     ///   - content: the view content
     public init(
         alignment: OverlapVStackAlignment = .centered,
-        arrangement: VerticalOverlapArrangement = .stackedFromBottom,
+        arrangement: VerticalOverlapArrangement = .stackedFromTop,
         defaultOffset: CGFloat = 24,
         @ViewBuilder content: @escaping () -> Content) {
             self.alignment = alignment
@@ -99,27 +99,27 @@ private func vStack(alignment: OverlapVStackAlignment, arrangement: VerticalOver
     }
 }
 
-#Preview("top bottomToTop") {
-    vStack(alignment: .top, arrangement: .stackedFromBottom)
+#Preview("leading bottomToTop") {
+    vStack(alignment: .leading, arrangement: .stackedFromBottom)
 }
 
 #Preview("centered bottomToTop") {
     vStack(alignment: .centered, arrangement: .stackedFromBottom)
 }
 
-#Preview("bottom bottomToTop") {
-    vStack(alignment: .bottom, arrangement: .stackedFromBottom)
+#Preview("trailing bottomToTop") {
+    vStack(alignment: .trailing, arrangement: .stackedFromBottom)
 }
 
-#Preview("top topToBottom") {
-    vStack(alignment: .top, arrangement: .stackedFromTop)
+#Preview("leading topToBottom") {
+    vStack(alignment: .leading, arrangement: .stackedFromTop)
 }
 
 #Preview("centered topToBottom") {
     vStack(alignment: .centered, arrangement: .stackedFromTop)
 }
 
-#Preview("bottom topToBottom") {
-    vStack(alignment: .bottom, arrangement: .stackedFromTop)
+#Preview("trailing topToBottom") {
+    vStack(alignment: .trailing, arrangement: .stackedFromTop)
 }
 #endif

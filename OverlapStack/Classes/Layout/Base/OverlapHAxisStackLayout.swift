@@ -23,24 +23,24 @@ extension OverlapHAxisStackLayout {
     @inlinable func heightThatFitsAfter(adding item: OverlapItemCache, previousCalculatedHeight: CGFloat) -> CGFloat {
         switch alignment {
         case .centered: max(previousCalculatedHeight, item.frame.axisRotationalSize.height)
-        case .leading: max(previousCalculatedHeight, item.frame.maxY)
-        case .trailing: max(previousCalculatedHeight, abs(item.frame.minY))
+        case .top: max(previousCalculatedHeight, item.frame.maxY)
+        case .bottom: max(previousCalculatedHeight, abs(item.frame.minY))
         }
     }
     
     @inlinable func rectY(for subview: LayoutSubview, sized size: CGSize, previousItem: OverlapItemCache?) -> CGFloat {
         return switch alignment {
         case .centered: subview.alignmentOffset - (size.height / 2)
-        case .leading: subview.alignmentOffset
-        case .trailing: subview.alignmentOffset - size.height
+        case .top: subview.alignmentOffset
+        case .bottom: subview.alignmentOffset - size.height
         }
     }
     
     @inlinable func placementItemY(_ item: OverlapItemCache, in bounds: CGRect, proposal: ProposedViewSize) -> CGFloat {
         return switch alignment {
-        case .leading: bounds.minY + item.frame.minY
+        case .top: bounds.minY + item.frame.minY
         case .centered: bounds.minY + ((bounds.size.height - item.frame.size.height) / 2) + item.frame.midY
-        case .trailing: bounds.minY + bounds.size.height + item.frame.minY
+        case .bottom: bounds.minY + bounds.size.height + item.frame.minY
         }
     }
 }

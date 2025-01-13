@@ -23,24 +23,24 @@ extension OverlapVAxisStackLayout {
     @inlinable func widthThatFitsAfter(adding item: OverlapItemCache, previousCalculatedWidth: CGFloat) -> CGFloat {
         return switch alignment {
         case .centered: max(previousCalculatedWidth, item.frame.axisRotationalSize.width)
-        case .top: max(previousCalculatedWidth, item.frame.maxX)
-        case .bottom: max(previousCalculatedWidth, abs(item.frame.minX))
+        case .leading: max(previousCalculatedWidth, item.frame.maxX)
+        case .trailing: max(previousCalculatedWidth, abs(item.frame.minX))
         }
     }
     
     @inlinable func rectX(for subview: LayoutSubview, sized size: CGSize, previousItem: OverlapItemCache?) -> CGFloat {
         return switch alignment {
         case .centered: subview.alignmentOffset - (size.width / 2)
-        case .top: subview.alignmentOffset
-        case .bottom: subview.alignmentOffset - size.width
+        case .leading: subview.alignmentOffset
+        case .trailing: subview.alignmentOffset - size.width
         }
     }
     
     @inlinable func placementItemX(_ item: OverlapItemCache, in bounds: CGRect, proposal: ProposedViewSize) -> CGFloat {
         return switch alignment {
-        case .top: bounds.minX + item.frame.minX
+        case .leading: bounds.minX + item.frame.minX
         case .centered: bounds.minX + ((bounds.size.width - item.frame.size.width) / 2) + item.frame.midX
-        case .bottom: bounds.minX + bounds.size.width + item.frame.minX
+        case .trailing: bounds.minX + bounds.size.width + item.frame.minX
         }
     }
 }

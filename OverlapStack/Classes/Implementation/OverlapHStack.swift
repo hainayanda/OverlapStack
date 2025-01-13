@@ -99,27 +99,27 @@ private func hStack(alignment: OverlapHStackAlignment, arrangement: HorizontalOv
     }
 }
 
-#Preview("leading leadingToTrailing") {
-    hStack(alignment: .leading, arrangement: .stackedFromLeading)
+#Preview("top leadingToTrailing") {
+    hStack(alignment: .top, arrangement: .stackedFromLeading)
 }
 
 #Preview("centered leadingToTrailing") {
     hStack(alignment: .centered, arrangement: .stackedFromLeading)
 }
 
-#Preview("trailing leadingToTrailing") {
-    hStack(alignment: .trailing, arrangement: .stackedFromLeading)
+#Preview("bottom leadingToTrailing") {
+    hStack(alignment: .bottom, arrangement: .stackedFromLeading)
 }
 
-#Preview("leading trailingToLeading") {
-    hStack(alignment: .leading, arrangement: .stackedFromTrailing)
+#Preview("top trailingToLeading") {
+    hStack(alignment: .top, arrangement: .stackedFromTrailing)
 }
 
 #Preview("centered trailingToLeading") {
     hStack(alignment: .centered, arrangement: .stackedFromTrailing)
 }
 
-#Preview("trailing trailingToLeading") {
-    hStack(alignment: .trailing, arrangement: .stackedFromTrailing)
+#Preview("bottom trailingToLeading") {
+    hStack(alignment: .bottom, arrangement: .stackedFromTrailing)
 }
 #endif

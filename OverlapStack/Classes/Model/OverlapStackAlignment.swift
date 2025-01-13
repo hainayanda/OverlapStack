@@ -8,12 +8,12 @@
 
 public enum OverlapHStackAlignment {
     case centered
-    case leading
-    case trailing
+    case top
+    case bottom
 }
 
 public enum OverlapVStackAlignment {
     case centered
-    case top
-    case bottom
+    case leading
+    case trailing
 }

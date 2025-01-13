@@ -29,7 +29,9 @@ struct OverlapReverseVStackLayout {
 }
 
 // MARK: OverlapReverseVStackLayout + OverlapStackLayout
-
+// will put the item backward to negative y, so it will stacked from bottom to top
+// then the position will be adjusted on placing an item
+// once the size of the stack is determined and can be used to determine the real y
 extension OverlapReverseVStackLayout: OverlapVAxisStackLayout {
     
     @inlinable func heightThatFitsAfter(adding item: OverlapItemCache, previousCalculatedHeight: CGFloat) -> CGFloat {
